@@ -507,15 +507,22 @@
 				<Member
 					fullName="Windows.Foundation.IAsyncOperation`1&lt;Windows.Devices.Geolocation.GeolocationAccessStatus&gt; Windows.Devices.Geolocation.Geolocator.RequestAccessAsync()"
 					reason="Aligned API" />
-
 				<Member
 					fullName="CoreGraphics.CGSize Windows.UI.Xaml.Controls.VirtualizingPanelLayout.GetItemSizeForIndexPath(Foundation.NSIndexPath indexPath)"
 					reason="Made internal, shouldn't normally be called by consumer code"/>
 				<Member
 					fullName="CoreGraphics.CGSize Windows.UI.Xaml.Controls.ListViewBaseSource.GetItemSize(UIKit.UICollectionView collectionView, Foundation.NSIndexPath indexPath)"
 					reason="Made internal, shouldn't normally be called by consumer code"/>
-            </Methods>
-			
+				<Member
+					fullName="System.Void Windows.UI.Xaml.RoutedEvent..ctor(System.String name)"
+					reason="Not part of the UWP API." />
+				<Member
+					fullName="Windows.Foundation.Point Windows.UI.Xaml.Input.DoubleTappedRoutedEventArgs.GetPosition()"
+					reason="Not part of the UWP API." />
+				<Member
+					fullName="Windows.Foundation.Point Windows.UI.Xaml.Input.TappedRoutedEventArgs.GetPosition()"
+					reason="Not part of the UWP API." />
+      </Methods>
 			<Fields>
 				<Member 
 					fullName="System.Int32 Windows.UI.Input.GestureSettings::value__"
@@ -572,6 +579,20 @@
 					fullName="Windows.UI.Xaml.RoutedEventArgs Windows.UI.Xaml.RoutedEventArgs::Empty()"
 					reason="Not part of the UWP API."/>
 			</Properties>
+		</IgnoreSet>
+		
+		<IgnoreSet baseVersion="2.0.528">
+			<Methods>
+				<Member
+					fullName="System.Void Windows.UI.Xaml.RoutedEvent..ctor(System.String name)"
+					reason="Not part of the UWP API." />
+				<Member
+					fullName="Windows.Foundation.Point Windows.UI.Xaml.Input.DoubleTappedRoutedEventArgs.GetPosition()"
+					reason="Not part of the UWP API." />
+				<Member
+					fullName="Windows.Foundation.Point Windows.UI.Xaml.Input.TappedRoutedEventArgs.GetPosition()"
+					reason="Not part of the UWP API." />
+            </Methods>
 		</IgnoreSet>
 	</IgnoreSets>
 </DiffIgnore>
